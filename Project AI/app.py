@@ -5,11 +5,11 @@ import pickle as pk
 model = pk.load(open('model.pkl','rb'))
 scaler = pk.load(open('scaler.pkl','rb'))
 
-st.header('Loan Predcition App')
+st.header('Loan Prediction App')
 
 no_of_dep = st.slider('Choose No of dependents', 0, 5)
 grad = st.selectbox('Choose Education',['Graduated','Not Graduated'])
-self_emp = st.selectbox('Self Emoployed ?',['Yes','No'])
+self_emp = st.selectbox('Self Employed ?',['Yes','No'])
 Annual_Income = st.slider('Choose Annual Income', 0, 10000000)
 Loan_Amount = st.slider('Choose Loan Amount', 0, 10000000)
 Loan_Dur = st.slider('Choose Loan Duration', 0, 20)
